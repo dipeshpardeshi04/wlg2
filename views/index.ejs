@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+<!-- jQuery library -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </head>
 
 <body>
@@ -20,9 +28,17 @@
         <form id="login_form" class="form_class" action="noaction.php" method="post">
             <div class="form_div">
                 <label>Username:</label>
-                <input class="field_class" name="login_txt" type="text" placeholder="Enter Username" autofocus>
+                <input class="field_class"  name="login_txt" type="text" placeholder="Enter Username" autofocus required>
+
+                <label>Mobile:</label>
+                <input id="mobile" class="field_class" name="Mobile_txt" type="tel" pattern="[0-9]{10}" placeholder="Enter Mobile No." required>
+
+
+                <label>Email:</label>
+                <input id="pass" class="field_class" name="Email_txt" type="email" placeholder="Enter Email" required>
+                
                 <label>Password:</label>
-                <input id="pass" class="field_class" name="password_txt" type="password" placeholder="Enter password">
+                <input id="pass" class="field_class" name="password_txt" type="password" placeholder="Enter password" required>
                 <button class="submit_class" type="submit" form="login_form"
                     onclick="return validarLogin()">ENTER</button>
             </div>
