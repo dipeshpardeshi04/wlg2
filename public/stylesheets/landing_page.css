@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #1a202c;
+    color: white;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: none;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.left>* {
+    padding: 7px 15px 0 15px;
+}
+.right>* {
+    padding: 0 15px 0 15px;
+}
+
+.signupbtn {
+    background-color: rgb(34 34 34);
+    background: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.signupbtn:hover {
+    font-size: 17px;
+    color: white
+}
+
+.loginbtn {
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+}
+
+.loginbtn:hover {
+    font-weight: bold;
+    font-size: 17px;
+}
+main {
+    display: flex;
+}
+
+.sidebar {
+    width: 20vw;
+    background-color: #f7fafc;
+    padding: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 4px;
+}
+
+.main-content {
+    width: 80vw;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.hero {
+    background-color: #edf2f7;
+    padding: 5rem;
+    text-align: center;
+    min-height: 30vh;
+    align-items: center;
+}
+
+.hero h1 {
+    margin-top: 0;
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero .get-started {
+    background-color: #ffa200;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.course{
+  /*   width: 90%; */
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 500;
+    padding: 10px;
+}
+p{
+    color: #777;
+    font-size: 25px;
+    padding: 10px;
+}
+.row{
+    margin: 5%;
+    display : flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.career-card {
+    background-color: white;
+    color: #10152b;
+    border-radius: 15px;
+    padding: 1rem;
+    width: calc(33.333% - 1rem); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.career-card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+}
+
+.career-card p {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+}
+.apply-button {
+    background-color: rgb(34 34 34);
+    color: rgb(255, 255, 255);
+    border-radius: 21px;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+}
+footer {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 2rem;
+}
+.footer-section:last-child {
+    margin-right: 0;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
