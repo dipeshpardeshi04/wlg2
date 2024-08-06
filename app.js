@@ -13,7 +13,7 @@ app.get('/',function(req,res){
     res.render("index");
 })
 
-app.get('/landingpage',function(req,res){
+app.post('/landingpage',function(req,res){
     res.render("landing_page");
 })
 
