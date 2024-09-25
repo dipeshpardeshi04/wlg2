@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="w-full h-full bg-zinc-900 pt-10 text-white">
+            <div class="nav mb-10 pl-4">
+                <a class="text-blue-500" href="/read">Read Users</a>
+            </div>
+            <form action="/create" method="post">
+                <h1 class="text-3xl tracking-tighter mb-3 pl-4">Create User</h1>
+                <input
+                    class="border-zinc-300 py-2 px-5 m-6 rounded-lg bg-transparent"
+                    type="text" placeholder="Coursename" name="Coursename">
+                <input
+                    class="border-zinc-300 py-2 px-5 m-6 rounded-lg bg-transparent"
+                    type="text" placeholder="Department" name="Department">
+                <input
+                    class="border-zinc-300 py-2 px-5 m-6 rounded-lg bg-transparent"
+                    type="text" placeholder="Duration" name="Duration">
+                <input
+                    class="border-zinc-300 py-2 px-5 m-6 rounded-lg bg-transparent"
+                    type="text" placeholder="Eligibility" name="Eligibility"> 
+                <input
+                    class="border-zinc-300 py-2 px-5 m-6 rounded-lg bg-transparent"
+                    type="text" placeholder="Fees" name="Fees"> 
+                <input
+                    class="border-zinc-300 py-2 px-5 m-6 rounded-lg bg-transparent"
+                    type="text" placeholder="Intake" name="Intake">  
+                    <input class="py-2 px-5 bg-blue-600 rounded-md" type="submit" value="Create User">
+            </form>
+        </div>
+    </body>
+</html>

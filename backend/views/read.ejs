@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="w-full h-full bg-zinc-900 pt-10 text-white">
+            <a class="text-blue-500 pl-4 " href="/">Back To Home</a>
+                <h1 class="text-3xl tracking-tighter mb-3 p-4">All User</h1>
+                <div class="users flex gap-4 flex-wrap">
+                    <% if (users.length > 0 ){ %>
+                        <% users.forEach(function(user){ %>
+                            <div class="user w-72 rounded-lg bg-zinc-800 p-4">
+                                    <h3 class="text-xl tracking-tighter mt-2"><%= user.Coursename %></h3>
+                                    <h5 class="text-zinc-500"><%= user.Department %></h5>
+                                    <h5 class="text-zinc-500"><%= user.Duration %></h5>
+                                    <h5 class="text-zinc-500"><%= user.Eligibility %></h5>
+                                    <h5 class="text-zinc-500"><%= user.Fees %></h5> 
+                                    <h5 class="text-zinc-500"><%= user.Intake %></h5>
+                                    <div class="flex mt-3 justify-between">
+                                    <a class="text-zinc-300 " href="/edit/<%= user._id %>">Edit User</a>
+                                    <a class="text-red-500" href="/delete/<%= user._id %>">Delete User</a>
+                                </div>
+                            </div>
+                       <% }) %>
+                   <% } else { %>
+                        <h3 class="text-since-500 m-6">NO USERS YET</h3>
+                  <% }%>
+                   
+                </div>
+        </div>
+    </body>
+</html>
